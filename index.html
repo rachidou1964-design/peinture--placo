@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فخامة الديكور | لخدمات الدهان والـ Placo Plâtre</title>
+    <!-- ربط خط كايرو المميز من جوجل -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* القائمة العلوية */
+        header {
+            background-color: #0f2027;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            color: #f8b500;
+            font-size: 24px;
+        }
+
+        /* الواجهة الرئيسية */
+        .hero {
+            background: linear-gradient(rgba(15, 32, 39, 0.8), rgba(15, 32, 39, 0.8)), url('https://unsplash.com') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            max-width: 600px;
+        }
+
+        .btn-call {
+            background-color: #f8b500;
+            color: #0f2027;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .btn-call:hover {
+            background-color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* قسم الخدمات */
+        .services {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #0f2027;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #f8b500;
+            margin: 10px auto 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 5px solid #f8b500;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: #0f2027;
+        }
+
+        /* قسم معرض الأعمال (صور توضيحية مؤقتة) */
+        .gallery {
+            background-color: #eef2f3;
+            padding: 60px 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item p {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #0f2027;
+        }
+
+        /* قسم التواصل وفوتير الموقع */
+        footer {
+            background-color: #0f2027;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .footer-credit {
+            font-size: 14px;
+            color: #aaa;
+            border-top: 1px solid #203a43;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- أعلى الصفحة -->
+    <header>
+        <h1>فن وديكور | للدهان والـ Placo Plâtre</h1>
+    </header>
+
+    <!-- الواجهة الترحيبية -->
+    <section class="hero">
+        <h2>حوّل منزلك إلى تحفة فنية عصرية</h2>
+        <p>متخصصون في تركيب الأسقف المستعارة، ديكورات الجبس بورد (Placo)، وأحدث صيحات الدهانات الداخلية والخارجية بدقة وإتقان عاليين.</p>
+        <a href="tel:+213555123456" class="btn-call">إتصل بنا الآن: 0555123456</a>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section class="services">
+        <h2 class="section-title">خدماتنا المتميزة</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🏗️</div>
+                <h3>تركيب Placo Plâtre</h3>
+                <p>أسقف مستعارة (Faux Plafonds)، تقسيم الغرف، ديكورات شاشات البلازما، وإضاءة مخفية بتصاميم حديثة ومقاومة للرطوبة.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>الدهانات والديكور</h3>
+                <p>تطبيق أرقى أنواع الدهانات (ديكورات السابيبل، الفلفت، الستيكو) والطلاء العادي بدقة متناهية وسرعة في التنفيذ.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📐</div>
+                <h3>دراسة وتصميم المساحات</h3>
+                <p>نساعدك في اختيار الألوان والتصاميم التي تناسب مساحة منزلك وميزانيتك مع ضمان استغلال كل زاوية.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم معرض الصور لبعض الأعمال -->
+    <section class="gallery">
+        <h2 class="section-title">من أعمالنا</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="ديكور بلاكو بلاتر">
+                <p>تركيب أسقف مع إضاءة مخفية</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="عملية دهان">
+                <p>دهانات صالونات عصرية</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="ديكور جداري">
+                <p>ديكور بلازما وجدران Placo</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- أسفل الصفحة والتواصل -->
+    <footer>
+        <div class="contact-info">
+            <h3>تواصل معنا مباشرة للحصول على تسعيرة مجانية</h3>
+            <p>📍 مكان النشاط: متوفرون في كافة الولايات المجاورة</p>
+            <p>📞 الهاتف: 0555123456</p>
+            <p>✉️ البريد الإلكتروني: contact@decor-dz.com</p>
+        </div>
+        <div class="footer-credit">
+            <p>جميع الحقوق محفوظة &copy; 2026 | تم التصميم بكل احترافية</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
